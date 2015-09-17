@@ -173,6 +173,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="AureliaApp\movieData.js" />
+    <Content Include="AureliaApp\config.js" />
     <Content Include="AureliaApp\currentDate.js" />
     <Content Include="AureliaApp\currentDate.html" />
     <Content Include="AureliaApp\app.html" />

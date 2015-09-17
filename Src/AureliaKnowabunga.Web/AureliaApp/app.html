@@ -2,7 +2,16 @@
     <div>
         You have ${movies.length} movies
     </div>
-    <button click.trigger="changeMessage()">Change</button>
-
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>ReleaseYear</th>
+        </tr>
+        <tr repeat.for="movie of movies">
+            <td>${movie.name}</td>
+            <td>${movie.releaseYear}</td>
+        </tr>
+    </table>
+    
     <compose view-model="currentDate"></compose>
 </template>
