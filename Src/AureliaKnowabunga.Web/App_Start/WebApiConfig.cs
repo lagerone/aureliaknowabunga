@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
+using System.Net.Http.Formatting;
 using System.Web.Http;
+using Newtonsoft.Json.Serialization;
 
 namespace AureliaKnowabunga.Web
 {
@@ -19,6 +19,9 @@ namespace AureliaKnowabunga.Web
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
+            jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
         }
     }
 }

@@ -115,9 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\MoviesController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -155,10 +155,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="AureliaApp\currentDate.js" />
+    <Content Include="AureliaApp\currentDate.html" />
+    <Content Include="AureliaApp\app.html" />
     <Content Include="AureliaApp\greeter.js" />
     <Content Include="AureliaApp\app.js" />
     <Content Include="Content\bootstrap.css" />
