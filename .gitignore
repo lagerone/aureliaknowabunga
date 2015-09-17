@@ -21,5 +21,10 @@ logs/
 packages/
 src/build
 TestResult.xml
-build/node_modules
-build/.grunt
+
+node_modules
+jspm_packages
+bower_components
+.idea
+/dist
+build/reports
