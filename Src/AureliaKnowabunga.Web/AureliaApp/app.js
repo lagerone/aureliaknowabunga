@@ -8,8 +8,8 @@ export class App {
 
     activate () {
         return this.http.get("/api/movies")
-            .then(hrm => {
-                this.movies = JSON.parse(hrm.response);
+            .then(httpResponseMessage => {
+                this.movies = JSON.parse(httpResponseMessage.response);
             });
     }
 

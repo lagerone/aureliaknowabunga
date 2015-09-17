@@ -1,19 +1,22 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
 using AureliaKnowabunga.Web.Models;
+using AureliaKnowabunga.Web.Repositories;
 
 namespace AureliaKnowabunga.Web.Api
 {
     public class MoviesController : ApiController
     {
+        private readonly IMovieRepository _movieRepository;
+
+        public MoviesController(IMovieRepository movieRepository)
+        {
+            _movieRepository = movieRepository;
+        }
+
         public IEnumerable<Movie> Get()
         {
-            return new[]
-            {
-                new Movie { Id = 1, Name = "Girlhood", ReleaseYear = 2015 },
-                new Movie  { Id = 2, Name = "Montage of Heck", ReleaseYear = 2015 },
-                new Movie { Id = 3, Name = "Inherent Vice", ReleaseYear = 2014 }
-            };
+            return _movieRepository.GetAll();
         }
     }
 }
