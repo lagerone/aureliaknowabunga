@@ -2,7 +2,7 @@
 
 ##Installation instructions
 
-Install jsqp package manager: `npm install jspm -g`
+Install jspm package manager: `npm install jspm -g`
 
 cd to `AureliaKnowabunga.Web` and run `npm install`
 
