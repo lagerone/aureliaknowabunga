@@ -7,29 +7,14 @@
                     Aurelia Hackathon
                 </a>
             </div>
+            <ul class="nav navbar-nav">
+                <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+                    <a href.bind="row.href">${row.title}</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div>
-                    You have ${movies.length} movies
-                </div>
-                <table class="table">
-                    <tr>
-                        <th>Title</th>
-                        <th>ReleaseYear</th>
-                    </tr>
-                    <tr repeat.for="movie of movies">
-                        <td>${movie.name}</td>
-                        <td>${movie.releaseYear}</td>
-                    </tr>
-                </table>
-
-                <compose view-model="currentDate"></compose>        
-            </div>
-        </div>
-        
-    </div>
+    <router-view></router-view>    
+    
 </template>

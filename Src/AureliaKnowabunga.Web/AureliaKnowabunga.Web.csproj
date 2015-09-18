@@ -175,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="AureliaApp\about\about.html" />
+    <Content Include="AureliaApp\about\about.js" />
+    <Content Include="AureliaApp\main.js" />
     <Content Include="AureliaApp\jspm_packages\github\aurelia\binding%400.9.1.js" />
     <Content Include="AureliaApp\jspm_packages\github\aurelia\binding%400.9.1\aurelia-binding.js" />
     <Content Include="AureliaApp\jspm_packages\github\aurelia\bootstrapper%400.17.0.js" />
@@ -2712,6 +2715,8 @@
     <Content Include="AureliaApp\currentDate.html" />
     <Content Include="AureliaApp\app.html" />
     <Content Include="AureliaApp\app.js" />
+    <Content Include="AureliaApp\movies\list.html" />
+    <Content Include="AureliaApp\movies\list.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
